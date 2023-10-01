@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-left">
+      <div class="card">
+        <div class="content-card " id="rtr">
+          <div class="front-card">
+            <div class="front-text">
+              <img src="images/card-logo.svg" alt="logo">
+              <div id="card-data-number">XXXX XXXX XXXX XXXX</div>
+              <div id="card-data-name">NAME</div>
+              <div id="card-data-exp">EXP</div>
+              <div id="card-data-exp2"></div>
+            </div>
+            <img src="images/bg-card-front.png" alt="front.pnj">
+          </div>
+          <div class="back-card">
+            <div class="back-text">
+              <div id="card-data-cvc">000</div>
+            </div>
+            <img src="images/bg-card-back.png" alt="back.pnj">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-right">
+      <form class="input">
+        <div class="card-name">
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" id="name">
+        </div>
+        <div class="card-number">
+          <label for="number">CARD NUMBER</label>
+          <input class="data" type="text" id="number">
+        </div>
+        <div class="card-ex-date">
+          <label id="date-label" for="mm">EXP DATE (MM/YY)</label>
+          <input type="data" id="mm">
+          <input type="data" id="yy">
+        </div>
+        <div class="card-cvc">
+          <label for="cvc">CVC</label>
+          <input type="data" id="cvc">
+        </div>
+        <div class="submit">
+          <button id="btn" type="submit">conform</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="myinfo">
+      <a href="https://codepen.io/Rehman-Ali-the-selector">R</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
